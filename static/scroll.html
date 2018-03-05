@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="iscroll.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <style>
+    #wrapper {
+      position: absolute;
+      top:10px;
+      bottom: 10px;
+      left: 0;
+      z-index: 1;
+      overflow: hidden;
+      width:100%;
+      outline: 1px solid grey;
+    }
+    #scroller {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      width:130%;
+    }
+    #scroller>h2 {
+      width: 30%;
+      height: 15%;
+    }
+    h2 {
+      outline: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <div style="" id="scroller">
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+    <h2>艾斯德斯</h2>
+  </div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+//  window.onload=function () {
+//
+//  }
+  $(function () {
+    new IScroll('#wrapper',{
+      scrollX: true,
+      freeScroll: true
+    })
+    $('h2').on('click',function () {
+      alert($(this).html())
+    })
+    var arr=[1,2,5];
+    arr.forEach((v,k)=>{
+      console.log(v,k)
+    })
+  })
+</script>
+</body>
+</html>
